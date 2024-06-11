@@ -1,0 +1,37 @@
+[
+  {
+    "Classname": "1A",
+    "Actions": "12",
+    "AssemblyPoint": "Nerimanov "
+  },
+  {
+    "Classname": "1B",
+    "Actions": "12",
+    "AssemblyPoint": "20 yanvar"
+  },
+  {
+    "Classname": "1C",
+    "Actions": "12",
+    "AssemblyPoint": "Xalqlar"
+  },
+  {
+    "Classname": "1D",
+    "Actions": "12",
+    "AssemblyPoint": "Inshaatchilar"
+  },
+  {
+    "Classname": "2B",
+    "Actions": null,
+    "AssemblyPoint": "28 May"
+  },
+  {
+    "Classname": "3A",
+    "Actions": null,
+    "AssemblyPoint": "Qara Qarayev"
+  },
+  {
+    "Classname": "5t",
+    "Actions": null,
+    "AssemblyPoint": "Memar Ecemi"
+  }
+]

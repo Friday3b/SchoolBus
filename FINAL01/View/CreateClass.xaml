@@ -1,0 +1,41 @@
+﻿<Page x:Class="FINAL01.View.CreateClass"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FINAL01.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400" 
+      Title="CreateClass">
+
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+
+            <RowDefinition></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Background="AliceBlue" VerticalAlignment="Bottom">
+            <TextBlock HorizontalAlignment="Left" Width="150" Height="60" Text="CLASS" FontWeight="ExtraBold" FontSize="45" Background="Yellow" ></TextBlock>
+        </StackPanel >
+        <StackPanel  Grid.Row="1" Background="AliceBlue">
+            <TextBox Height="30" Margin="10 10 10 10" Text="{Binding CurrentClass.Classname , UpdateSourceTrigger=PropertyChanged}"  FontWeight="ExtraBold" Tag="Classname"  GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus" ></TextBox>
+        </StackPanel>
+        <StackPanel  Grid.Row="2" Background="AliceBlue">
+            <TextBox Height="30" Margin="10 10 10 10" Text="{Binding CurrentClass.AssemblyPoint , UpdateSourceTrigger=PropertyChanged}"  FontWeight="ExtraBold" Tag="AssemblyPoint"  GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus" ></TextBox>
+        </StackPanel>
+
+
+
+        <StackPanel  Grid.Row="3" Background="AliceBlue">
+            <Button Height="30" Width="90" HorizontalAlignment="Right" Content="Create" FontWeight="ExtraBlack" Background="Yellow" Margin="10 10 10 10" Command="{Binding SaveCommand}"></Button>
+        </StackPanel>
+
+
+    </Grid>
+</Page>

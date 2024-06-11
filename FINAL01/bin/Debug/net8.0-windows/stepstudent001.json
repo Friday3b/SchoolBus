@@ -1,0 +1,42 @@
+[
+  {
+    "FirstName": "Haciyev",
+    "LastName": "Taleh",
+    "Parent": "Khalil",
+    "Gender": "Male",
+    "HomeAddress": "Khirdalan",
+    "OtherAddress": "Yasamal"
+  },
+  {
+    "FirstName": "Mahmudov",
+    "LastName": "Ferid",
+    "Parent": "Nazim",
+    "Gender": "Male",
+    "HomeAddress": "Khirdalan",
+    "OtherAddress": "Yasamal"
+  },
+  {
+    "FirstName": "Valishov",
+    "LastName": "Mansur",
+    "Parent": "Qalib",
+    "Gender": "Male",
+    "HomeAddress": "Khirdalan",
+    "OtherAddress": "Yasamal"
+  },
+  {
+    "FirstName": "Hikmetli",
+    "LastName": "Mubarek",
+    "Parent": "Bilal",
+    "Gender": "Male",
+    "HomeAddress": "Khirdalan",
+    "OtherAddress": "Yasamal"
+  },
+  {
+    "FirstName": "Savahli",
+    "LastName": "Kerim",
+    "Parent": "Sani",
+    "Gender": "Male",
+    "HomeAddress": "Khirdalan",
+    "OtherAddress": "Yasamal"
+  }
+]

@@ -1,0 +1,100 @@
+﻿<Page x:Class="FINAL01.View.CreateDriver"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FINAL01.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateDriver">
+
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+        <RowDefinition Height="2*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+
+
+
+
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Bottom">
+            <TextBlock Height="50"  Text="New Driver" FontSize="40" FontWeight="ExtraBold" Width="300" Background="Yellow" TextAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="firstname_of_driver" Height="50" Width="700" Text="{Binding CurrentDriver.FirstName, UpdateSourceTrigger=PropertyChanged}"  FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus" Tag="FirstName"  Background="AliceBlue">
+            </TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="lastname_of_driver" Height="50" Width="700" Text="{Binding CurrentDriver.LastName , UpdateSourceTrigger=PropertyChanged}"  FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus"  Background="AliceBlue" Tag="LastName">
+            </TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="phone_of_driver" Height="50" Width="700" Text="{Binding CurrentDriver.Phone , UpdateSourceTrigger=PropertyChanged}"  FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus"   Background="AliceBlue" Tag="Phone">
+            </TextBox>
+        </StackPanel>
+
+
+
+
+
+        <StackPanel Grid.Row="4" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="username_of_driver" Height="50" Width="700" Text="{Binding CurrentDriver.Username , UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" Background="AliceBlue" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Tag="Username">
+            </TextBox>
+        </StackPanel>
+
+
+
+
+        <StackPanel Grid.Row="5" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="password_of_driver" Height="50" Width="700" Text="{Binding CurrentDriver.Password , UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" Background="AliceBlue" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus" Tag="Password">
+            </TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" HorizontalAlignment="Left" Height="100"  >
+            <TextBlock Name="gender_of_driver" Height="50" Width="600" Text="{Binding CurrentDriver.Gender , UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" Background="AliceBlue">
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="6" HorizontalAlignment="Right"  Width="130" Background="LightGray" VerticalAlignment="Bottom">
+            <RadioButton Name="gender_radiobutton_man_driver" Content="Man" GroupName="stepschool"  Background="LightYellow" FontWeight="ExtraBlack" ></RadioButton>
+            <RadioButton Name="gender_radiobutton_woman_driver" Content="Woman" GroupName="stepschool" Background="LightYellow" FontWeight="ExtraBlack" ></RadioButton>
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="homeaddress_of_driver" Height="50" Width="600" Text="{Binding CurrentDriver.HomeAddress , UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" Background="AliceBlue" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus">
+            </TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="7" HorizontalAlignment="Right" Width="70" VerticalAlignment="Bottom" >
+            <Button Name="homeaddress_locate_button" Background="Yellow" Height="20" ></Button>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="9" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Name="create_newparent_of_driver" Content="CREATE" FontWeight="ExtraBold" FontSize="25"  Background="LightGray"  Command="{Binding SaveCommand}">
+
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" HorizontalAlignment="Left" Height="100"  >
+            <TextBox Name="license_of_driver" Height="50" Width="600" Text="{Binding CurrentDriver.License , UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="ExtraBlack" Margin="10 10 10 10" Background="AliceBlue" GotFocus="TextBox_GotFocus"  LostFocus="TextBox_LostFocus">
+            </TextBox>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,112 @@
+﻿<Window x:Class="FINAL01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FINAL01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+           
+        </Grid.RowDefinitions>
+
+
+        <!--yuxari ortadan xett-->
+        <Grid Grid.Row="0"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="4*"/>
+
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Grid.Background>
+            <ImageBrush ImageSource= "T:\Proqramlar\VisualStudio\Taleh\FINAL01\FINAL01\Image\schoolbus_driver_shortage - Copy.jpeg" Stretch="Fill"     />
+     </Grid.Background>
+
+            <Rectangle Fill="Black" Opacity="0.7"  Grid.RowSpan="2" Grid.ColumnSpan="3"></Rectangle>
+
+        <!--ortadan arakesme row olaraq-->
+       
+
+
+
+
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3" Click="CreateRide"  >
+                    <Label Content="Create Ride" HorizontalAlignment="Center" FontSize="10"  Height="25" FontWeight="ExtraBold" Foreground="LightGoldenrodYellow"></Label>
+                </Button>
+
+              
+
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3" Click="Class" >
+                    <Label Content="Class" HorizontalAlignment="Center" FontSize="10" Height="25" FontWeight="ExtraBold"  Foreground="LightGoldenrodYellow"></Label>
+                </Button>
+
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3" Click="Student" >
+                    <Label Content="Student" HorizontalAlignment="Center" FontSize="10" Height="25" FontWeight="ExtraBold"  Foreground="LightGoldenrodYellow"  ></Label>
+                </Button>
+
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3" Click="Parent_button" >
+                    <Label Content="Parent" HorizontalAlignment="Center" FontSize="10" Height="25" FontWeight="ExtraBold" Foreground="LightGoldenrodYellow"></Label>
+                </Button>
+
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3" Click="Driver_click" >
+                    <Label Content="Driver" HorizontalAlignment="Center" FontSize="10" Height="25" FontWeight="ExtraBold"  Foreground="LightGoldenrodYellow"></Label>
+                </Button>
+
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3" Click="Car_Click">
+                    <Label Content="Car" HorizontalAlignment="Center" FontSize="10" Height="25" FontWeight="ExtraBold" Foreground="LightGoldenrodYellow"  ></Label>
+                </Button>
+
+                <Button Height="25" Width="auto" Margin="10" Background="#FF1657E3"  Click="Holiday">
+                    <Label Content="Holidays" HorizontalAlignment="Center" FontSize="10" Height="25"  FontWeight="ExtraBold" Foreground="LightGoldenrodYellow" ></Label>
+                </Button>
+
+
+            </StackPanel>
+
+            <Frame Name="Main"   Grid.Row="1"   Grid.Column="1" Grid.ColumnSpan="2">
+                
+            </Frame>
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

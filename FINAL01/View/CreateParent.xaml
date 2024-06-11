@@ -1,0 +1,26 @@
+﻿<Page x:Class="FINAL01.View.CreateParent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FINAL01.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateParent">
+
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+            <TextBox Background="AliceBlue" Name="firstname_of_textbox" Width="150" Margin="5" Text="{Binding CurrentParent.FirstName, UpdateSourceTrigger=PropertyChanged}" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Tag="FirstName"/>
+            <TextBox Background="AliceBlue" Name="lastname_of_textbox" Width="150" Margin="5" Text="{Binding CurrentParent.LastName, UpdateSourceTrigger=PropertyChanged}" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Tag="LastName"/>
+            <TextBox Background="AliceBlue" Name="phone_of_textbox" Width="150" Margin="5" Text="{Binding CurrentParent.Phone, UpdateSourceTrigger=PropertyChanged}" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Tag="Phone"/>
+            <TextBox Background="AliceBlue" Name="username_of_textbox" Width="150" Margin="5" Text="{Binding CurrentParent.Username, UpdateSourceTrigger=PropertyChanged}" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Tag="Username"/>
+            <TextBox Background="AliceBlue" Name="password_of_textbox" Width="150" Margin="5" Text="{Binding CurrentParent.Password, UpdateSourceTrigger=PropertyChanged}" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Tag="Password"/>
+            <Button Content="SaveParent" Width="100" Margin="5" Command="{Binding SaveCommand}" Background="Yellow"/>
+        </StackPanel>
+    </Grid>
+</Page>

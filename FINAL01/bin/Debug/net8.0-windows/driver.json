@@ -1,0 +1,30 @@
+[
+  {
+    "FirstName": "Haciyev",
+    "LastName": "Murad",
+    "Username": "Haciyevs",
+    "Phone": "+994555555555",
+    "Car": "Ford",
+    "License": "have license till 2030",
+    "Action": null
+  },
+  {
+    "FirstName": "Veliyev",
+    "LastName": "Shain",
+    "Username": "Veliyevs",
+    "Phone": "+994555555555",
+    "Car": "Ford",
+    "License": "have license till 2030",
+    "Action": null
+  },
+  {
+    "FirstName": "Mahmudlu",
+    "LastName": "Kamandar",
+    "Username": "Mahmudlus",
+    "Phone": "+994555555555",
+    "Car": "Ford",
+    "License": "have license till 2030",
+    "Action": null
+  }
+  
+]

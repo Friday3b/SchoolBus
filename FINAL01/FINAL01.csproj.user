@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Car.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Class.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateCar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateClass.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateDriver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateParent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateRide.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Driver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Holiday.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Parent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Student.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Car.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Class.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateCar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateClass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateDriver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateParent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateRide.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateStudent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Driver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Holiday.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Parent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Student.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

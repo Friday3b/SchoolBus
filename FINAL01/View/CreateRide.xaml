@@ -1,0 +1,89 @@
+﻿<Page x:Class="FINAL01.View.CreateRide"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FINAL01.View" 
+      xmlns:map="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateRide">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <Button HorizontalAlignment="Left" Width="90" Height="30" Margin="10" Content="ADD" FontWeight="ExtraBold" Background="Yellow" FontSize="20" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Left" Width="90" Height="30" Text="WHERE :" Background="Yellow" FontWeight="ExtraBold" Margin="10" TextAlignment="Center" FontSize="20" />
+            <RadioButton Content="to Home" GroupName="stepschool" Margin="10 0 0 0" Background="LightYellow" FontWeight="ExtraBlack" />
+            <RadioButton Content="to School" GroupName="stepschool" Margin="10 0 0 0" Background="LightYellow" FontWeight="ExtraBlack" />
+        </StackPanel>
+
+        <!-- Names of our sections -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Background="Yellow" Margin="10">
+            <TextBlock Text="DRIVER" Foreground="Black" FontSize="15" FontWeight="ExtraBold" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="Yellow" Margin="10">
+            <TextBlock Text="GROUPS" Foreground="Black" FontSize="15" FontWeight="ExtraBold" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Background="Yellow" Margin="10">
+            <TextBlock Text="LOCATIONS" Foreground="Black" FontSize="15" FontWeight="ExtraBold" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <!-- Driver -->
+        <StackPanel Grid.Row="2" Grid.Column="0" CanVerticallyScroll="True">
+            <ComboBox Name="Driver_combobox" ItemsSource="{Binding DriverList}" DisplayMemberPath="FirstName" SelectedItem="{Binding CurrentDriver}" />
+        </StackPanel>
+
+        <!-- Student -->
+        <StackPanel Grid.Row="2" Grid.Column="1" CanVerticallyScroll="True">
+            <ComboBox Name="Student_combobox" ItemsSource="{Binding ClassList}" DisplayMemberPath="Classname" SelectedItem="{Binding CurrentClass}" />
+        </StackPanel>
+
+        <!-- for Location -->
+        <StackPanel Grid.Row="2" Grid.Column="2" CanVerticallyScroll="True">
+            <ComboBox Name="Student_combobox_assemblypoint" ItemsSource="{Binding ClassList}" DisplayMemberPath="AssemblyPoint" SelectedItem="{Binding CurrentClass}" />
+        </StackPanel>
+
+        <!-- Map control -->
+        <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="10">
+            <map:Map CredentialsProvider="yBGOll6t4KlDDiucfEiS~ltnmWMT-VFLHA-q9PrFP2Q~AvEjOgKmb6a9PJ3X0My1yHbyTJ6kGkeqWQGy8C35YFXZA7exALq2JhvBDFm0R_Gx" Name="mp" Margin="0,13,0,41" RenderTransformOrigin="0.5,0.5">
+                <map:Map.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="1.008"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-1.849"/>
+                    </TransformGroup>
+                </map:Map.RenderTransform>
+
+                <map:Pushpin Location="40.403665, 49.807948" Margin="-11,-18,11,18">
+                    <map:Pushpin.Template>
+                        <ControlTemplate>
+                            <Ellipse Width="9" Height="9" Fill="Red" ></Ellipse>
+                        </ControlTemplate>
+                    </map:Pushpin.Template>
+                </map:Pushpin>
+            </map:Map>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" VerticalAlignment="Bottom">
+            <Button Content="START" Command="{Binding StartCommand}" HorizontalAlignment="Left" Width="90" Height="30" Margin="10" FontWeight="ExtraBold" Background="Yellow" FontSize="20" />
+        </StackPanel>
+    </Grid>
+</Page>
